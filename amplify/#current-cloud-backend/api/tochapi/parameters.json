@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "tochapi",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognito53765520",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

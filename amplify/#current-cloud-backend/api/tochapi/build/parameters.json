@@ -1,0 +1,12 @@
+{
+    "AppSyncApiName": "tochapi",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognito53765520",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "aws-appsync-chat-20190325033259-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/916070b540c083d81ca38fdf9bc50bf79dadd688"
+}
